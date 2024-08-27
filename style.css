@@ -46,6 +46,8 @@ body {
 
 .container {
     height: 100%;
+    width: 100%;
+    padding: 1rem;
     max-width: 550px;
     margin: 0 auto;
     display: flex;
@@ -152,4 +154,58 @@ footer a.btn-footer {
 	50%{
 		transform:translatey(-5px)
 	}
+}
+
+
+
+/* MEDIA QUERIES PARA TELAS MENORES */
+
+@media (max-width: 768px) {
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    a.link button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    footer a.btn-footer {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5em;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    a.link button {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    footer a.btn-footer {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+        line-height: 40px;
+    }
+
+    .container {
+        padding: 10px;
+    }
 }
